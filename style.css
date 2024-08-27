@@ -1,0 +1,49 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+.slider-container{
+    width: 800px;
+    /* border: 1px solid #000000; */
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+   
+}
+.slider{
+    display: flex;
+    transition: transform 0.6s ease-in-out;
+}
+.slide{
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    flex: 0 0 100%;
+}
+.slider-controls{
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+.slider-controls button{
+    padding: 10px 30px;
+    border-radius: 8px;
+    background-color: white;
+    color: brown;
+    border: none;
+    margin: 0 10px;
+}
+.slide.active{
+    transform: translateX(0);
+}
